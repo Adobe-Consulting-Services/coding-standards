@@ -8,6 +8,8 @@
     This ruleset defines common coding rules used by Adobe Consulting Services.
   </description>
   
-  <rule ref="rulesets/java/basic.xml"/>
+  <rule ref="rulesets/java/basic.xml">
+      <exclude name="UselessParentheses"/>
+  </rule>
   <rule ref="rulesets/java/logging-java.xml"/>
 </ruleset>
