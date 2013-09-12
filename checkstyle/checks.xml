@@ -61,13 +61,13 @@
 
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
-        <module name="JavadocMethod">
+        <module name="ExportedJavadocMethod">
             <property name="scope" value="protected"/>
         </module>
-        <module name="JavadocType">
+        <module name="ExportedJavadocType">
             <property name="scope" value="protected"/>
         </module>
-        <module name="JavadocVariable">
+        <module name="ExportedJavadocVariable">
             <property name="scope" value="protected"/>
         </module>
         <module name="JavadocStyle"/>
@@ -159,7 +159,10 @@
         <!-- Miscellaneous other checks.                   -->
         <!-- See http://checkstyle.sf.net/config_misc.html -->
         <module name="ArrayTypeStyle"/>
+        <!--
         <module name="FinalParameters"/>
+        -->
+        
         <module name="TodoComment"/>
         <module name="UpperEll"/>
 

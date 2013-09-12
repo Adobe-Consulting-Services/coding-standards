@@ -27,4 +27,11 @@ This git repository houses various coding standard configuration files used by A
 	    <configuration>
 	        <configLocation>https://raw.github.com/Adobe-Consulting-Services/coding-standards/master/checkstyle/checks.xml</configLocation>
 	    </configuration>
+        <dependencies>
+            <dependency>
+                <groupId>com.adobe.acs</groupId>
+                <artifactId>checkstyle-osgi-checks</artifactId>
+                <version>0.0.1</version>
+            </dependency>
+        </dependencies>
 	</plugin>
