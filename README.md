@@ -1,4 +1,3 @@
-
 # Adobe Consulting Services Coding Standards
 
 This git repository houses various coding standard configuration files used by Adobe Consulting Services.
@@ -31,7 +30,7 @@ This git repository houses various coding standard configuration files used by A
             <dependency>
                 <groupId>com.adobe.acs</groupId>
                 <artifactId>checkstyle-osgi-checks</artifactId>
-                <version>0.0.1</version>
+                <version>0.0.2</version>
             </dependency>
         </dependencies>
 	</plugin>
