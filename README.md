@@ -19,6 +19,8 @@ This git repository houses various coding standard configuration files used by A
 
 ### Checkstyle
 
+Add [this repo](https://github.com/Adobe-Consulting-Services/maven-repo) and then...
+
 	<plugin>
 	    <groupId>org.apache.maven.plugins</groupId>
 	    <artifactId>maven-checkstyle-plugin</artifactId>
