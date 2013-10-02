@@ -19,7 +19,7 @@ This git repository houses various coding standard configuration files used by A
 
 ### Checkstyle
 
-Add [this repo](https://github.com/Adobe-Consulting-Services/maven-repo) and then...
+Add [this repo](http://repo.adobe.com/) and then...
 
 	<plugin>
 	    <groupId>org.apache.maven.plugins</groupId>
@@ -32,7 +32,7 @@ Add [this repo](https://github.com/Adobe-Consulting-Services/maven-repo) and the
             <dependency>
                 <groupId>com.adobe.acs</groupId>
                 <artifactId>checkstyle-osgi-checks</artifactId>
-                <version>0.0.2</version>
+                <version>0.0.3</version>
             </dependency>
         </dependencies>
 	</plugin>
