@@ -136,7 +136,11 @@
         <!-- See http://checkstyle.sf.net/config_coding.html -->
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
-        <module name="HiddenField"/>
+        <module name="HiddenField">
+            <property name="ignoreSetter" value="true"/>
+            <property name="ignoreConstructorParameter" value="true"/>
+            <property name="ignoreAbstractMethods" value="true"/>
+        </module>
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
         <module name="MagicNumber"/>
