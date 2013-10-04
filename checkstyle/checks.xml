@@ -59,6 +59,7 @@
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
         <module name="ExportedJavadocMethod">
             <property name="scope" value="protected"/>
+            <property name="allowMissingPropertyJavadoc" value="true"/>
         </module>
         <module name="ExportedJavadocType">
             <property name="scope" value="protected"/>
