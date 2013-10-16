@@ -36,3 +36,7 @@ Add [this repo](http://repo.adobe.com/) and then...
             </dependency>
         </dependencies>
 	</plugin>
+
+#### Eclipse Users
+
+The URL above won't import into Eclipse Checkstyle plugin due to the use of custom modules. Use [https://raw.github.com/Adobe-Consulting-Services/coding-standards/master/checkstyle/checks-eclipse.xml](https://raw.github.com/Adobe-Consulting-Services/coding-standards/master/checkstyle/checks-eclipse.xml) instead
