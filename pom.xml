@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.adobe.acs</groupId>
     <artifactId>coding-standards</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>jar</packaging>
 
     <name>ACS Coding Standards</name>
@@ -47,7 +47,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:Adobe-Consulting-Services/coding-standards.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>coding-standards-0.0.1</tag>
   </scm>
   
     <repositories>
