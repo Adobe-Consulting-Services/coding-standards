@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.adobe.acs</groupId>
+    <artifactId>coding-standards</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>ACS Coding Standards</name>
+    <description>Maven project for Adobe Coding Standards.</description>
+
+    <url>https://github.com/Adobe-Consulting-Services/coding-standards</url>
+    <inceptionYear>2013</inceptionYear>
+    <licenses>
+        <license>
+          <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <organization>
+      <name>Adobe</name>
+      <url>http://www.adobe.com/</url>
+    </organization>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>pmd</directory>
+                <targetPath>acs/pmd</targetPath>
+            </resource>
+            <resource>
+                <directory>checkstyle</directory>
+                <targetPath>acs/checkstyle</targetPath>
+                <excludes>
+                    <exclude>*-eclipse.xml</exclude>
+                </excludes>
+            </resource>
+        </resources>
+    </build>
+
+
+    <scm>
+        <developerConnection>scm:git:git@github.com:Adobe-Consulting-Services/coding-standards.git</developerConnection>
+      <tag>HEAD</tag>
+  </scm>
+  
+    <repositories>
+        <repository>
+            <id>adobe-public-releases</id>
+            <name>Adobe Public Repository</name>
+            <url>http://repo.adobe.com/nexus/content/groups/public/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>adobe-public-releases</id>
+            <name>Adobe Public Repository</name>
+            <url>http://repo.adobe.com/nexus/content/groups/public/</url>
+            <layout>default</layout>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <repository>
+            <id>${releaseRepository-Id}</id>
+            <name>${releaseRepository-Name}</name>
+            <url>${releaseRepository-URL}</url>
+        </repository>
+        <snapshotRepository>
+            <id>${snapshotRepository-Id}</id>
+            <name>${snapshotRepository-Name}</name>
+            <url>${snapshotRepository-URL}</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
