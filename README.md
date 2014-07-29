@@ -4,6 +4,8 @@ This git repository houses various coding standard configuration files used by A
 
 ## Usage
 
+Add [this repo](http://repo.adobe.com/) and then...
+
 ### PMD
 
 	<plugin>
@@ -12,23 +14,31 @@ This git repository houses various coding standard configuration files used by A
 	    <version>3.0.1</version>
 	    <configuration>
 	        <rulesets>
-	            <ruleset>https://raw.github.com/Adobe-Consulting-Services/coding-standards/master/pmd/rules.xml</ruleset>
+	            <ruleset>acs/pmd/rules.xml</ruleset>
 	        </rulesets>
+	        <dependency>
+	            <groupId>com.adobe.acs</groupId>
+	            <artifactId>coding-standards</artifactId>
+	            <version>0.0.1</version>
+	        </dependency>
 	    </configuration>
 	</plugin>
 
 ### Checkstyle
-
-Add [this repo](http://repo.adobe.com/) and then...
 
 	<plugin>
 	    <groupId>org.apache.maven.plugins</groupId>
 	    <artifactId>maven-checkstyle-plugin</artifactId>
 	    <version>2.10</version>
 	    <configuration>
-	        <configLocation>https://raw.github.com/Adobe-Consulting-Services/coding-standards/master/checkstyle/checks.xml</configLocation>
+	        <configLocation>acs/checkstyle/checks.xml</configLocation>
 	    </configuration>
         <dependencies>
+            <dependency>
+                <groupId>com.adobe.acs</groupId>
+                <artifactId>coding-standards</artifactId>
+                <version>0.0.1</version>
+            </dependency>
             <dependency>
                 <groupId>com.adobe.acs</groupId>
                 <artifactId>checkstyle-osgi-checks</artifactId>
