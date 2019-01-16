@@ -17,11 +17,13 @@ Add [this repo](http://repo.adobe.com/) and then...
 	            <ruleset>acs/pmd/rules.xml</ruleset>
 	        </rulesets>
 	    </configuration>
-	    <dependency>
-	        <groupId>com.adobe.acs</groupId>
-	        <artifactId>coding-standards</artifactId>
-	        <version>0.0.1</version>
-	    </dependency>
+	    <dependencies>
+	        <dependency>
+	            <groupId>com.adobe.acs</groupId>
+	            <artifactId>coding-standards</artifactId>
+	            <version>0.0.1</version>
+	        </dependency>
+	    </dependencies>
 	</plugin>
 
 ### Checkstyle
