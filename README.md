@@ -11,7 +11,7 @@ Add [this repo](http://repo.adobe.com/) and then...
 	<plugin>
 	    <groupId>org.apache.maven.plugins</groupId>
 	    <artifactId>maven-pmd-plugin</artifactId>
-	    <version>3.0.1</version>
+	    <version>3.6</version>
 	    <configuration>
 	        <rulesets>
 	            <ruleset>acs/pmd/rules.xml</ruleset>
